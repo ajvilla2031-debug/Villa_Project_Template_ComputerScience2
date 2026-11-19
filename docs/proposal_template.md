@@ -1,7 +1,7 @@
 # 📌 Project Proposal (Draft)
 
 ## 📝 Project Title  
-*Enter your initial project title here.*  
+*Personal Expense and Budget Tracker*  
 
 ---
 
@@ -15,9 +15,9 @@ What real-world problem does your project want to solve?
 
 ## 🎯 Project Objectives  
 Write at least **2–3 clear objectives** your project aims to achieve. Example:  
-- Objective 1: To analyze and summarize data from the chosen JSON dataset.  
-- Objective 2: To help users gain meaningful insights (e.g., averages, trends, patterns).  
-- Objective 3: To practice JSON handling and Python programming concepts.  
+* Objective 1: To help users track daily expenses and monitor their remaining allowance in one place.
+* Objective 2: To organize spending records by category and timestamp so users can see where their money goes.
+* Objective 3: To practice using lists, loops, functions, and built in libraries in Python.
 
 ---
 
@@ -25,11 +25,11 @@ Write at least **2–3 clear objectives** your project aims to achieve. Example:
 Your program must have **at least 5 features (minimum)**.  
 We have provided **2 starter ideas** for each dataset — you must design **at least 3 additional features**.  
 
-- Feature 1: *(Starter idea)*  
-- Feature 2: *(Starter idea)*  
-- Feature 3: *(Your own idea)*  
-- Feature 4: *(Your own idea)*  
-- Feature 5: *(Your own idea)*  
+* Feature 1: Add a new expense with amount, category, and automatic date and time stamp.
+* Feature 2: View full transaction history across all logged expenses.
+* Feature 3: Filter expenses by a specific category such as Food or Transport.
+* Feature 4: Calculate total spent and remaining budget from the starting allowance.
+* Feature 5: Run an interactive menu loop until the user chooses to exit.
 
 *(You may add more features if you like.)*  
 
@@ -37,13 +37,17 @@ We have provided **2 starter ideas** for each dataset — you must design **at l
 
 ## ⌨️ Planned Inputs and Outputs  
 
-- **Inputs**  
-  - What kind of data will the user provide (if any)?  
-  - Example: student ID, date range, product name  
+* Inputs
+  * Starting allowance amount
+  * Expense amount and category
+  * Category filter keyword
+  * Menu choice from 1 to 5
+* Outputs
+  * Confirmation message when an expense is added
+  * List of past transactions with timestamps and categories
+  * Filtered expenses matching the chosen category
+  * Budget summary showing total allowance, total spent, and remaining budget
 
-- **Outputs**  
-  - What kind of results will your program display?  
-  - Example: class averages, top products, weather summary  
 
 ---
 
@@ -52,20 +56,27 @@ Describe your program’s logic:
 
 ### Pseudocode  
 Write your steps in plain English. Example:  
-Load JSON file
-Display menu of features
-If user chooses "1", compute average grade per student
-If user chooses "2", list all borrowed books
-Repeat until user exits program
+## Pseudocode
+Set starting allowance and create empty lists for amounts, categories, and dates
+Repeat menu until user chooses exit:
+  If user chooses 1: get amount and category, add timestamp, save to lists
+  If user chooses 2: loop through lists and print transaction history
+  If user chooses 3: ask for category, loop through list, print matching items
+  If user chooses 4: loop to sum expenses, subtract from allowance, print summary
+  If user chooses 5: stop loop and exit
+
+
+
 
 
 ### Flowchart  
-Attach or draw a flowchart showing how the program will work.  
+
+## Flowchart
+Start -> Enter Allowance -> Show Menu -> Choose Action (Add Expense, View History, Filter Category, View Summary, Exit) -> Repeat until Exit -> End
 
 ---
 
 ## 📂 GitHub Repository Link  
 Paste your GitHub repository link here:  
-`https://github.com/username/project-proposal`  
-
+https://github.com/ajvilla2031-debug/Villa_Project_Template_ComputerScience2/tree/main
 ---
